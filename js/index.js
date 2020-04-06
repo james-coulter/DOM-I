@@ -124,3 +124,52 @@ const navColor = document.querySelectorAll('header > nav > a');
 navColor.forEach(navBar => {
   navBar.style.color = 'green';
 });
+
+//STRETCH Colors
+
+function changeFunction(){
+  const navColor = document.querySelectorAll('nav > a');
+navColor.forEach(navBar => {
+  navBar.style.color = 'white';
+});
+
+const navLogo = document.querySelectorAll('header > img');
+navLogo.forEach(logo => {
+  logo.style.filter = 'invert(1)';
+});
+
+const h1Color = document.querySelectorAll('.cta-text > h1');
+h1Color.forEach(color => {
+  color.style.color = 'white';
+});
+
+// const ctaLogo = document.querySelectorAll('.cta > img');
+// ctaLogo.forEach(logo => {
+//   logo.style.filter = 'invert(1)';
+// });
+
+const textColor = document.querySelectorAll('.text-content');
+textColor.forEach(Color => {
+  Color.style.color = 'white';
+});
+
+// const middleLogo = document.querySelectorAll('.main-content > img');
+// middleLogo.forEach(logo => {
+//   logo.style.filter = 'invert(1)';
+// });
+
+const contactColor = document.querySelectorAll('.contact');
+contactColor.forEach(Color => {
+  Color.style.color = 'white';
+});
+
+const footerColor = document.querySelectorAll('footer');
+footerColor.forEach(Color => {
+  Color.style.color = 'white';
+});
+
+const backgroundColor = document.querySelectorAll('body');
+backgroundColor.forEach(bckClr => {
+  bckClr.style.background = 'black';
+})
+}
