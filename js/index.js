@@ -103,3 +103,24 @@ contactContent[2].textContent = siteContent['contact']['email'];
 //Footer
 const footer = document.querySelector('footer');
 footer.textContent = siteContent['footer']['copyright'];
+
+//Task 3 - New Nav Items
+
+const home = document.createElement('a');
+const careers = document.createElement('a');
+
+home.textContent = 'Home';
+home.href = '#';
+careers.textContent = 'Careers';
+careers.href = '#';
+
+let newNavItem = document.querySelector('header > nav');
+newNavItem.prepend(careers);
+newNavItem.prepend(home);
+
+//Nav Color
+
+const navColor = document.querySelectorAll('header > nav > a');
+navColor.forEach(navBar => {
+  navBar.style.color = 'green';
+});
