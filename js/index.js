@@ -39,4 +39,67 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+//navbar
+const navBar = document.querySelectorAll('a');
+navBar[0].textContent = siteContent['nav']['nav-item-1'];
+navBar[1].textContent = siteContent['nav']['nav-item-2'];
+navBar[2].textContent = siteContent['nav']['nav-item-3'];
+navBar[3].textContent = siteContent['nav']['nav-item-4'];
+navBar[4].textContent = siteContent['nav']['nav-item-5'];
+navBar[5].textContent = siteContent['nav']['nav-item-6'];
+
+//--------- Hero Header ---------
+
+//cta-h1
+const ctah1 = document.querySelector('h1');
+ctah1.textContent = siteContent['cta']['h1'];
+
+//cta-button
+const button = document.querySelector('button');
+button.textContent = siteContent['cta']['button'];
+
+//cirlce Image
+const largeImg = document.getElementById('cta-img');
+largeImg.setAttribute('src', siteContent['cta']['img-src']);
+
+//-----------------------------------
+
+//------- Main Content --------------
+
+//Content Headings
+const headings = document.querySelectorAll('.text-content > h4');
+headings[0].textContent = siteContent['main-content']['features-h4'];
+headings[1].textContent = siteContent['main-content']['about-h4'];
+headings[2].textContent = siteContent['main-content']['services-h4'];
+headings[3].textContent = siteContent['main-content']['product-h4'];
+headings[4].textContent = siteContent['main-content']['vision-h4'];
+
+//Content Content
+const content = document.querySelectorAll('.text-content > p');
+content[0].textContent = siteContent['main-content']['features-content'];
+content[1].textContent = siteContent['main-content']['about-content'];
+content[2].textContent = siteContent['main-content']['services-content'];
+content[3].textContent = siteContent['main-content']['product-content'];
+content[4].textContent = siteContent['main-content']['vision-content'];
+
+//Middle Img
+const midImg = document.getElementById('middle-img');
+midImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+//Contact Header
+const contactHead = document.querySelector('.contact > h4');
+contactHead.textContent = siteContent['contact']['contact-h4'];
+
+//Contact Content
+const contactContent = document.querySelectorAll('.contact > p');
+contactContent[0].textContent = siteContent['contact']['address'];
+contactContent[1].textContent = siteContent['contact']['phone'];
+contactContent[2].textContent = siteContent['contact']['email'];
+
+//-----------------------------------
+
+//Footer
+const footer = document.querySelector('footer');
+footer.textContent = siteContent['footer']['copyright'];
