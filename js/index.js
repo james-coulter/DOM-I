@@ -110,7 +110,7 @@ const home = document.createElement('a');
 const careers = document.createElement('a');
 
 home.textContent = 'Home';
-home.href = '#';
+home.href = 'index.html';
 careers.textContent = 'Careers';
 careers.href = '#';
 
